@@ -74,14 +74,14 @@ function updateTable() {
 
     tablelist.innerHTML += `
       <tr>
-        <td class="basket-name">${table[i].name}</td>
-        <td>${table[i].price} EGP</td>
-        <td>
+        <td class="basket-name" data-label="Movie">${table[i].name}</td>
+        <td data-label="Price">${table[i].price} EGP</td>
+        <td data-label="Tickets">
           <button class="qty-btn" onclick="decrease(${i})">-</button>
           <span class="qty-num">${table[i].qty}</span>
           <button class="qty-btn" onclick="increase(${i})">+</button>
         </td>
-        <td>
+        <td data-label="Action">
           <button class="remove-btn" onclick="removeItem(${i})">Remove</button>
         </td>
       </tr>
