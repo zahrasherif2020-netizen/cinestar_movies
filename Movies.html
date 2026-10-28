@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍿 CineStar Movies</div>
+            <div class="home">
+                <a href="index.html">Home</a>
+                <a href="Movies.html" class="active">Movies & Tickets</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <h2 style="text-align: center; color: #0080c0; margin-top: 30px;"> 🎥 Movies you can watch here..</h2>
+
+    <div id="products" class="movies"></div>
+
+
+
+    <section class="basket">
+        <h2 class="basket-h2">Your Tickets Basket</h2>
+        <p class="basket-p">Choose movies from above using the "Book Now" button.</p>
+
+        <table class="basket-table">
+            <thead>
+                <tr>
+                    <th>Movie Title</th>
+                    <th>Ticket Price</th>
+                    <th>Tickets (Quantity)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="basket-body"></tbody>
+        </table>
+
+        <p class="basket-total">Total Amount: <span id="total">0</span> EGP</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 CineStar Movies. All Rights Reserved.</p>
+    </footer>
+
+    <script src="movies.js"></script>
+</body>
+
+</html>
